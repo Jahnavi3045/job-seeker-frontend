@@ -1,0 +1,107 @@
+/* Container for the entire job search component */
+.job-search {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px;
+  }
+  
+  /* Title styling */
+  .job-search h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the title */
+    font-size: 24px;
+  }
+  
+  /* Search form container */
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between form elements */
+  }
+  
+  /* Label styling */
+  .search-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Grey color for labels */
+  }
+  
+  /* Input and select field styling */
+  .search-form input,
+  .search-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+  }
+  
+  /* Button styling */
+  .search-form button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .search-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Job results container */
+  .job-results {
+    margin-top: 20px;
+  }
+  
+  /* Individual job card styling */
+  .job-card {
+    border: 1px solid #ddd; /* Light border for each job card */
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff; /* White background for each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  }
+  
+  /* Job title styling */
+  .job-card h3 {
+    margin: 0;
+    color: #007bff; /* Blue color for job titles */
+    font-size: 20px;
+  }
+  
+  /* Paragraph styling for job details */
+  .job-card p {
+    margin: 5px 0;
+    color: #333; /* Darker color for job details */
+    font-size: 14px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .job-search {
+      padding: 15px;
+    }
+  
+    .search-form button {
+      width: 100%;
+    }
+  
+    .job-card h3 {
+      font-size: 18px;
+    }
+  
+    .job-card p {
+      font-size: 13px;
+    }
+  }
+  
