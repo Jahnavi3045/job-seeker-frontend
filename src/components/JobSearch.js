@@ -26,7 +26,7 @@ const JobSearch = () => {
   const handleSearch = async () => {
     try {
       // Make an API request to get jobs based on user preferences
-      const response = await axios.get('http://localhost:5000/api/jobs', {
+      const response = await axios.get('https://job-seeker-backend-production.up.railway.app/api/jobs', {
         params: {
           location: preferences.location,
           type: preferences.type,
