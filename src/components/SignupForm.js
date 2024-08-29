@@ -26,7 +26,7 @@ const SignupForm = () => {
     data.append('phone', formData.phone);
     data.append('resume', formData.resume);
 
-    const apiBaseUrl=process.env.REACT_API_URL;
+    const apiBaseUrl=process.env.REACT_APP_API_URL;
 
     try {
       const response = await axios.post(`${apiBaseUrl}/api/users/signup`, data);

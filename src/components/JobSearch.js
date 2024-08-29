@@ -22,7 +22,7 @@ const JobSearch = () => {
       [name]: value
     }));
   };
-  const apiBaseUrl=process.env.REACT_API_URL;
+  const apiBaseUrl=process.env.REACT_APP_API_URL;
   const handleSearch = async () => {
     try {
       // Make an API request to get jobs based on user preferences
