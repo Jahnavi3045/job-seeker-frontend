@@ -41,6 +41,7 @@ const SignupForm = () => {
     } catch (error) {
       console.error('Error occurred while signing up:', error.response ? error.response.data : error.message);
       alert('There was an error signing up. Please try again.');
+      console.log(error)
     }
   };
 
