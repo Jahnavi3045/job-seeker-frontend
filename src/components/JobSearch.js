@@ -22,11 +22,11 @@ const JobSearch = () => {
       [name]: value
     }));
   };
-
+  const apiBaseUrl=process.env.REACT_API_URL;
   const handleSearch = async () => {
     try {
       // Make an API request to get jobs based on user preferences
-      const response = await axios.get('https://job-seeker-backend-production.up.railway.app/api/jobs', {
+      const response = await axios.get(`${apiBaseUrl}/api/jobs`, {
         params: {
           location: preferences.location,
           type: preferences.type,

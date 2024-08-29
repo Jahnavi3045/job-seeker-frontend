@@ -26,8 +26,10 @@ const SignupForm = () => {
     data.append('phone', formData.phone);
     data.append('resume', formData.resume);
 
+    const apiBaseUrl=process.env.REACT_API_URL;
+
     try {
-      const response = await axios.post('https://job-seeker-backend-production.up.railway.app/api/users/signup', data);
+      const response = await axios.post(`${apiBaseUrl}/api/users/signup`, data);
       console.log('Response:', response.data); // Log the response from the backend
       alert('Signup successful');
       setFormData({
