@@ -3,9 +3,6 @@ import axios from 'axios';
 import '../styles/JobSearch.css';
 
 const JobSearch = () => {
-  // const [qualifications, setQualifications] = useState('');
-  // const [location, setLocation] = useState('');
-  // const [type, setType] = useState('');
   const [preferences, setPreferences] = useState({
     location: '',
     type: '',
